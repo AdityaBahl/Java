@@ -15,6 +15,11 @@ class box {
         depth = d;
     }
 
+    box(double width, double height) {// this keyword
+        this.width = w;
+        this.height = h;
+    }
+
     void setDim(double w, double h, double d) {// parameterized
         width = w;
         height = h;
