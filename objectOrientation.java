@@ -4,6 +4,16 @@ class box {
     double depth;
 }
 
+class fishtank {
+    double width;
+    double height;
+    double depth;
+
+    void volume() {
+        System.out.println("Volume is: " + (width * height * depth));
+    }
+}
+
 public class objectOrientation {
     public static void main(String[] args) {
         box mybox = new box(); // reference referring to address of object
@@ -18,5 +28,10 @@ public class objectOrientation {
         double volume = mybox.width * mybox.height * mybox.depth;
         // print volume
         System.out.println("Volume = " + volume);
+        fishtank tank = new fishtank();
+        tank.width = 10.0;
+        tank.height = 20.0;
+        tank.depth = 30.0;
+        tank.volume();
     }
 }
