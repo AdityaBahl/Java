@@ -12,6 +12,7 @@ class Testing {
     }
 }
 
+// Call by
 public class CallByRef {
     public static void main(String args[]) {
         Testing ob = new Testing(15, 20);
