@@ -12,7 +12,7 @@ class Testing {
     }
 }
 
-// Call by
+// Call by refence is needed to change the original variable value
 public class CallByRef {
     public static void main(String args[]) {
         Testing ob = new Testing(15, 20);
