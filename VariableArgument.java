@@ -2,7 +2,7 @@ class Box {
     void argDemo(int... ary) {
         System.out.println("No of args " + ary.length);
         // ary is an array
-        // for(int i:ary){} can also be used al
+        // for(int i:ary){} can also be used alternati
         for (int i = 0; i < ary.length; i++) {
             System.out.print(ary[i] + " ");
         }
