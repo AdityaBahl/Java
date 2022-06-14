@@ -12,5 +12,7 @@ public class Recursion {
         System.out.println("Factorial of 4 is: " + fc.fact(3));
         System.out.println("Factorial of 5 is: " + fc.fact(4));
         System.out.println("Factorial of 5 is: " + fc.fact(5));
+        System.out.println("Factorial of 5 is: " + fc.fact(4));
+        System.out.println("Factorial of 5 is: " + fc.fact(5));
     }
 }
