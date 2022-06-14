@@ -10,5 +10,6 @@ public class Recursion {
     public static void main(String args[]) {
         Factorial fc = new Factorial();
         System.out.println("Factorial of 4 is: " + fc.fact(4));
+        System.out.println("Factorial of 4 is: " + fc.fact(4));
     }
 }
