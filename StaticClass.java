@@ -4,8 +4,8 @@ class Boxx {// counting objects using static variable
     static int numberOfBoxes = 0;// static
 
     Boxx() {
-        width = 10;
-        height = 20;
+        width = 10;//width
+        height = 20;//height
         numberOfBoxes++;// accessed in non static method
     }
 
