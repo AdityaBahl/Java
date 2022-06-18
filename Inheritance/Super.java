@@ -28,10 +28,11 @@ class RectBox extends Box {
     }
 
     void display() {
-        System.out.println("Super size(calling from base class(here Rectbox)) + width = " + super.size + " " + width);
+        System.out
+                .println("Super size(calling from base class(here Rectbox)) and width = " + super.size + " , " + width);
         // OR
         super.display(); // display of box
-        System.out.println(" " + width);
+        System.out.println("Rectbox Width: " + width);
         // Lets analyse the code below:
 
         // Box.size=20;//box rather than super
