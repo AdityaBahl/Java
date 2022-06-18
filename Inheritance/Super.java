@@ -17,18 +17,24 @@ class Box {
 class RectBox extends Box{
     int width;
     RectBox{
-        super();
+        super();            //Invokes Box(); must be first statement
         width=20;
     }
     RectBox{
-        super(obj);
+        super(obj);         //Passing RectBox to Box
         width=obj.width;
     }
-    
+    void display(){
+        System.out.println(super.size+" "+ width);
+        //OR
+        super.display();    //display of box
+        System.out.println(" " + width);
+    }
 }
 
 public class Super {
     public static void main(String args[]) {
-
+        RectBox rObj1 = new RectBox();
+        RectBox rObj2 = new RectBox(rObj1);// parameterized
     }
 }
