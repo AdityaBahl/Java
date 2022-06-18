@@ -9,8 +9,12 @@ class A {
 }
 
 class B extends A {
-    void meth() {// declaration is
-        System.out.println("Illegal!");
+    // void meth() {// declaration is illegal,compiler error
+    // System.out.println("Illegal!");
+    // }
+
+    void metho() {
+        System.out.println("legal!");
     }
 }
 
@@ -19,5 +23,7 @@ public class FinalKeyword {
         A a = new A();
         B b = new B();
         a.meth();
+        // b.meth(); // (illegal)
+        b.metho();// legal
     }
 }
