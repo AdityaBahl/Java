@@ -1,3 +1,23 @@
+class Outer {
+    int outer_x = 100;
+
+    class Inner// Inner class if declared Private is not available outside
+    {
+        int data = 20;
+
+        void display() {
+            System.out.println("outer_x= " + outer_x);// access outer variable
+        }
+    }
+
+    void test()// method of outer class
+    {
+        Inner inner = new Inner();// create object of inner class to access
+        inner.display();
+        inner.data = 40;// access inner class variable
+    }
+}
+
 public class NestedClass {
     public static void main(String args[]) {
         // nested class - a class within a class
