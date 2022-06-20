@@ -1,4 +1,9 @@
 import java.util.*;//reads integer from user
+//try - a block surrounding problem statement to monitor for exceptions
+//catch - together with try, catches specific kinds of exceptions and handles them in some way
+//finally - specifies any code that absolutely must be executed whether or not an exception occurs
+//throw - used to throw a specific exception from the program
+//throws - specifies which exception a given method can throw
 
 public class Explanation {
     public static void main(String args[]) {
