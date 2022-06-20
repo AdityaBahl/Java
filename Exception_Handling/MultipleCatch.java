@@ -9,7 +9,8 @@ public class MultipleCatch {
             int a=0;// value of a can also be greater than 0
             System.out.println("a= "+a);
             int b=42/a;//Divide by 0
-            
+            int c[]=new int[5];
+            c[8]=99;//Array index out of bound
         } 
     }
 }
