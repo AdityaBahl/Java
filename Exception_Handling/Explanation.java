@@ -21,8 +21,12 @@ public class Explanation {
 }
 // all exceptions in java are subclasses of the build in class "Throwable"
 // Throwable contains two immediate sub classes:
+
 // 1. Exception - should be catched, there are 2 types
-// 1.a. Checked Exceptions - compile time Exception, using try and catch method
-// 1.b. Unchecked Exceptions- Runtime Exception, using try and catch method
+// 1.a. Checked Exceptions - compile time Exception, must be handled using try
+// and catch block
+// 1.b. Unchecked Exceptions- Runtime Exception, not forced to handle but its a
+// good practice to handle
+
 // 2. Error - they are outside control usually, user programs are not required
 // to catch them
