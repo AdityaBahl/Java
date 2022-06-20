@@ -19,3 +19,8 @@ public class Explanation {
         System.out.println("After try/catch blocks");
     }
 }
+// all exceptions in java are subclasses of the build in class "Throwable"
+// Throwable contains two immediate sub classes:
+// 1. Exception - should be catched
+// 2. Error - they are outside control usually, user programs are not required
+// to catch them
