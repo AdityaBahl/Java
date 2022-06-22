@@ -27,3 +27,5 @@ public class Finally {
         System.out.println("after finally");
     }
 }
+// Sometimes exception other than the anticipated may be generated, program
+// exits but only after executing finally
