@@ -11,7 +11,17 @@ class MyException extends Exception {
         return "MyException[" +detail+ "]"
     }
 }
+
 // Use it to throw the exception object
+class Myclass {
+    void compute(int a)// throws MyException
+    {
+        System.out.println("Called compute(" + a + ")");
+        if(a>10)
+            throw new MyException
+        System.out.println("Normal Exit");
+    }
+}
 
 // steps - 1. create your own exception class
 // 2. Use it to throw the exception object
