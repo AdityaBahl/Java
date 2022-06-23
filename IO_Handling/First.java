@@ -16,8 +16,39 @@
 // 5. void close() - close the stream
 
 //There are 2 types of streams - byte and character stream
+import java.io.*;
+
 public class First {
     public static void main(String args[]) {
-
-    }
-}
+        FileInputStream in = null;
+        FileOutputStream out = null;
+        // FileReader inputReader=null; //for character stream
+        // FileWriter outputWriter=null;//for character stream
+        try {
+            in = new FileInputStream("C:\\Users\\Adi\\Desktop\\codes\\java\\practice\\IO_Handling\\input.txt");
+            out = new FileOutputStream("C:\\Users\\Adi\\Desktop\\codes\\java\\practice\\IO_Handling\\output.txt");
+            // File created or overwritten if previously existed
+            int c;// data is returned as int
+            while ((c = in.read()) != -1)// check if end of file
+            {
+                out.write(c);// write to output file. lowest 8 bits hold byte data
+            }
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+        // close all streams
+        finally {
+            try {
+                if (in != null)// is file open?
+                {
+                    in.close();
+                }
+                if (out != null) {
+                    out.close();
+                }
+            } catch (IOException e) {
+                System.out.println("Unable to close" + e);
+            }
+        } // finally
+    }// main
+}// class
