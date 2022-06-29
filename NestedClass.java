@@ -1,4 +1,4 @@
-//nested class
+//nested class in
 class Outer {
     int outer_x = 100;
 
