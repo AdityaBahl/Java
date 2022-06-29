@@ -1,4 +1,5 @@
-//nested class in
+//nested class in java
+
 class Outer {
     int outer_x = 100;
 
