@@ -1,3 +1,4 @@
+//nest
 class Outer {
     int outer_x = 100;
 
@@ -36,7 +37,7 @@ public class NestedClass {
         Outer obj=new Outer();
         obj.test();
         //create inner object. If not private OK
-        Outer.Inner obj=new Outer.new Inner();
+        Outer.Inner obj1=new Outer.new Inner();
         //Inner class has access to all members of the outer class but the reverse is not true
         // An Inner class may be defined within any block scope, eg- a loop can be used as a tool for performing some tasks
         
