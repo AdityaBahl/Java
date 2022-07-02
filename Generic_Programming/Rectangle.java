@@ -36,8 +36,8 @@ public class Rectangle {
         int fwidth = obj2.getLength();// Auto Unboxing
         int flength = obj2.getWidth();
         // int area2 = obj2.calculateArea();
-        System.out.println("Length= " + ilength + " Width= " + iwidth);
-        System.out.println("Area= " + ilength * iwidth);// imp to note
+        System.out.println("Length= " + flength + " Width= " + fwidth);
+        System.out.println("Area= " + flength * fwidth);// imp to note
         // System.out.println("Area= " + area2);
     }
 }
