@@ -17,6 +17,8 @@ class RectGen<T>{//single type parameter T
 }
 public class Rectangle{
     public static void main(String args[]){
-
+        //Rectangle of Integer(Autoboxing and Unboxing)
+        RectGen<Integer>obj1=new RectGen<Integer>(10,20);
+        
     }
 }
