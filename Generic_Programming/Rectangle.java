@@ -11,7 +11,9 @@ class RectGen<T>{//single type parameter T
     T getWidth(){
         return width;
     }
-
+    T calculateArea(){
+        return length*width;
+    }
 }
 public class Rectangle{
     public static void main(String args[]){
