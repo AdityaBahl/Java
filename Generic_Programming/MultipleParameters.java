@@ -25,5 +25,12 @@ class GenMulti<T, V, W> {
 }// end of class
 
 public class MultipleParameters {
-
-}
+    public static void main(String[] args) {
+        GenMulti<Integer, Double, String> objMulti;
+        objMulti = new GenMulti<Integer, Double, String>(200, 20.3, "Multi Type");
+        // display the type of data
+        objMulti.displayType();
+        // display data
+        objMulti.displayContent();
+    }
+}// end of class
