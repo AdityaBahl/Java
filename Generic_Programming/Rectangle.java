@@ -32,10 +32,10 @@ public class Rectangle {
         // System.out.println("Area= " + area1);
 
         // Rectangle of float
-        RectGen<Integer> obj2 = new RectGen<Integer>(10, 20);
-        int fwidth = obj2.getLength();// Auto Unboxing
-        int flength = obj2.getWidth();
-        // int area2 = obj2.calculateArea();
+        RectGen<Float> obj2 = new RectGen<Float>(10.2f, 20.3f);
+        float fwidth = obj2.getLength();// Auto Unboxing
+        float flength = obj2.getWidth();
+        // float area2 = obj2.calculateArea();
         System.out.println("Length= " + flength + " Width= " + fwidth);
         System.out.println("Area= " + flength * fwidth);// imp to note
         // System.out.println("Area= " + area2);
