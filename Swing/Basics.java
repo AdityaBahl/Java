@@ -1,4 +1,4 @@
-import javax.swing.*;;
+import javax.swing.*;
 
 public class Basics {
     // frame can be created in method or a constructor.
