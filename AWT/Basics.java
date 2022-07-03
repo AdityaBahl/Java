@@ -14,15 +14,22 @@ public class Basics extends Frame {
 //////////////////////////////////////
 
 // Alternate way:-
-// public class Basics extends Frame {
+// public class Basics {
 // public Basics() {
-// setSize(400, 300);
-// setVisible(true);
+// Frame frame = new Frame("hello first gui");
+// frame.setSize(400, 300);
+// frame.setVisible(true);
+// frame.addWindowListener(new WindowAdapter() {
+// @Override
+// public void windowClosing(WindowEvent e) {
+// frame.dispose();
 // }
-// public static void main(String[] args) {
-// Basics b = new Basics();
+// });
+// }
 //
+// public static void main(String[] args) {
+// new Basics();
 // }
 // }
-
+//
 //////////////////////////////////////
