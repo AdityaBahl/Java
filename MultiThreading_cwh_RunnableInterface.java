@@ -1,18 +1,21 @@
-class MyThread1 implements Runnable {
+class Mythread3 implements Runnable {
     public void run(){
         System.out.println("I am a thread 1");
     }
 }
-class MyThread2 implements Runnable {
+class Mythread4 implements Runnable {
     public void run(){
         System.out.println("I am a thread 2");
     }
 }
 public class MultiThreading_cwh_RunnableInterface {
     public static void main(String args[]) {
-        Mythread1 t1= new Mythread1();
-        Mythread1 t2= new Mythread2();
-       // t1.start(); //cant be run directly while implementing Runnable Interface, as in the case of extending Thread class
-       // t2.start(); //cant be run directly while implementing Runnable Interface, as in the case of extending Thread class 
-    }
+        Mythread3 bullet1= new Mythread3();//bullet in gun analogy
+        Thread gun1=new Thread(bullet1);        
+        Mythread4 bullet2= new Mythread4();
+        Thread gun2=new Thread(bullet2);
+        gun1.start(); //cant be run directly while implementing Runnable Interface without Thread gun type statements, as in the case of extending Thread class
+        gun2.start(); //cant be run directly while implementing Runnable Interface without Thread gun type statements, as in the case of extending Thread class 
+    
+      }
 }
