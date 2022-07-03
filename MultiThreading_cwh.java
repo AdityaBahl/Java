@@ -1,7 +1,11 @@
 // observe that both operations run concurrently and randomly and not subsequently
 // class Mythread1 extends Thread
 
+////////////////////////////////
+
 //Made By Extending Thread Class
+
+////////////////////////////////
 
 class Mythread1 extends Thread {
     // @Override
