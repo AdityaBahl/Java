@@ -2,11 +2,8 @@
 // class Mythread1 extends Thread
 class Mythread1 extends Thread {
     // @Override
-public:
-    void run()
-    {
-        while (true)
-        {
+    public void run() {
+        while (true) {
             System.out.println("Thread 1 is good");
             System.out.println("I'm happy");
         }
@@ -15,11 +12,8 @@ public:
 
 class Mythread2 extends Thread {
     // @Override
-public:
-    void run()
-    {
-        while (true)
-        {
+    public void run() {
+        while (true) {
             System.out.println("Thread 2 is good");
             System.out.println("I'm sad");
         }
