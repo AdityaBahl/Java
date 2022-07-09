@@ -1,9 +1,10 @@
-package Calculator;
+package java.practice.Calculator;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class Main{
-    public static void main(String args[]){
+public class Main {
+    public static void main(String args[]) {
 
     }
 }
