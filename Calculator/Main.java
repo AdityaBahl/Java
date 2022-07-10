@@ -1,7 +1,10 @@
 import javax.swing.*;
+import java.awt.*;
 
-public class Main {
-    public static void main(String args[]) {
+public class Main implements ActionListener{
+    public static void main(String args[])
+{
+
         //BUTTONS
 
         //1st Line
