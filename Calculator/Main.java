@@ -1,14 +1,18 @@
-package java.practice.Calculator;
-
 import javax.swing.*;
 
-public class Source {
+public class Main {
     public static void main(String args[]) {
+        JButton jb = new JButton("OG");
+
+        JTextField jtf = new JTextField("CALCULATE!");
+        jtf.setBounds(100, 140, 400, 40);
         JFrame jframe = new JFrame();
-        jframe.setTitle("This is a normal frame");
+        // jframe.setBounds(100, 90, 250, 40);
+        jframe.setTitle("Calculator");
         jframe.setLayout(null);
-        jframe.setSize(400, 400);
         jframe.setVisible(true);
+        jframe.setSize(500, 500);
+        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
 // import java.awt.*;
