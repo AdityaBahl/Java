@@ -2,7 +2,7 @@ package java.practice.Calculator;
 
 import javax.swing.*;
 
-public class Main {
+public class Source {
     public static void main(String args[]) {
         JFrame jframe = new JFrame();
         jframe.setTitle("This is a normal frame");
