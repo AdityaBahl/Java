@@ -1,11 +1,13 @@
 import javax.swing.*;
+
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Main implements ActionListener {
-    public Main
-    {
-        // BUTTONS
+    JTextField jtf;
 
+    public Main() {
+        // BUTTONS
         // 1st Line
         JButton reset = new JButton("O G");
         reset.setBounds(10, 100, 100, 50);
@@ -16,7 +18,7 @@ public class Main implements ActionListener {
         JButton undrrt = new JButton("sqr root");
         undrrt.setBounds(373, 100, 100, 50);
 
-        // 2nd Line
+        // 2nd Lines
         JButton one = new JButton("1");
         one.setBounds(10, 160, 100, 50);
         JButton two = new JButton("2");
@@ -62,7 +64,7 @@ public class Main implements ActionListener {
         // jb.setBounds(10,100,100,50);
 
         // JLabel jl=new JLabel("Calculator");
-        JTextField jtf = new JTextField("CALCULATE!");
+        jtf = new JTextField("CALCULATE!");
         jtf.setBounds(10, 20, 465, 70);
         JFrame jframe = new JFrame();
         // jframe.setBounds(100, 90, 250, 40);
@@ -121,67 +123,83 @@ public class Main implements ActionListener {
         jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    @Override public void actionPerformed(ActionEvent e){
-        if(e.getSource()==reset){
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String s0, s1, s2;
+        s0 = s1 = s2 = "";
+        String s = e.getActionCommand();
 
-        }
-        if else(e.getSource()==one){
+        // if the value is a number
+        if ((s.charAt(0) >= '0' && s.charAt(0) <= '9') || s.charAt(0) == '.') {
+            // if operand is present then add to second no
+            if (!s1.equals(""))
+                s2 = s2 + s;
+            else
+                s0 = s0 + s;
 
-        }
-        if else(e.getSource()==two){
-            
-        }
-        if else(e.getSource()==three){
-            
-        }
-        if else(e.getSource()==four){
-            
-        }
-        if else(e.getSource()==five){
-            
-        }
-        if else(e.getSource()==six){
-            
-        }
-        if else(e.getSource()==seven){
-            
-        }
-        if else(e.getSource()==eight){
-            
-        }
-        if else(e.getSource()==nine){
-            
-        }
-        if else(e.getSource()==zero){
-            
-        }
-        if else(e.getSource()==plus){
-            
-        }
-        if else(e.getSource()==minus){
-            
-        }
-        if else(e.getSource()==divide){
-            
-        }
-        if else(e.getSource()==multiply){
-            
-        }
-        if else(e.getSource()==equalsto){
-            
-        }
-        if else(e.getSource()==mod){
-            
-        }
-        if else(e.getSource()==undrrt){
-            
-        }
-        if else(e.getSource()==power){
-            
+            // set the value of text
+            jtf.setText(s0 + s1 + s2);
+        } else if (s.charAt(0) == 'C') {
+            // clear the one letter
+            s0 = s1 = s2 = "";
+
+            // set the value of text
+            jtf.setText(s0 + s1 + s2);
+        } else if (s.charAt(0) == '=') {
+
+            double te;
+
+            // store the value in 1st
+            if (s1.equals("+"))
+                te = (Double.parseDouble(s0) + Double.parseDouble(s2));
+            else if (s1.equals("-"))
+                te = (Double.parseDouble(s0) - Double.parseDouble(s2));
+            else if (s1.equals("/"))
+                te = (Double.parseDouble(s0) / Double.parseDouble(s2));
+            else
+                te = (Double.parseDouble(s0) * Double.parseDouble(s2));
+
+            // set the value of text
+            jtf.setText(s0 + s1 + s2 + "=" + te);
+
+            // convert it to string
+            s0 = Double.toString(te);
+
+            s1 = s2 = "";
+        } else {
+            // if there was no operand
+            if (s1.equals("") || s2.equals(""))
+                s1 = s;
+            // else evaluate
+            else {
+                double te;
+
+                // store the value in 1st
+                if (s1.equals("+"))
+                    te = (Double.parseDouble(s0) + Double.parseDouble(s2));
+                else if (s1.equals("-"))
+                    te = (Double.parseDouble(s0) - Double.parseDouble(s2));
+                else if (s1.equals("/"))
+                    te = (Double.parseDouble(s0) / Double.parseDouble(s2));
+                else
+                    te = (Double.parseDouble(s0) * Double.parseDouble(s2));
+
+                // convert it to string
+                s0 = Double.toString(te);
+
+                // place the operator
+                s1 = s;
+
+                // make the operand blank
+                s2 = "";
+            }
+
+            // set the value of text
+            jtf.setText(s0 + s1 + s2);
         }
     }
 
     public static void main(String args[]) {
-
+        Main m = new Main();
     }
 }
